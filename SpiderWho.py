@@ -129,7 +129,7 @@ def run():
         print_status_line()
         print_status_data(manager)
 
-    time.sleep(0.5)
+    time.sleep(config.THREAD_START_DELAY)
 
     try:
         while whoisThread.getProxyThreadCount() > 0 and manager.isAlive():
